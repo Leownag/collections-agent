@@ -120,3 +120,7 @@ The lesson: if a fact can be read from the ledger, put it in a deterministic gua
 - **Reviewer auth.** Pydantic AI's approval step doesn't authenticate the person approving. Production needs real authorization on approve and reject.
 - **Untrusted input.** Customer emails are untrusted input. The agent can only act on its assigned invoice (`_check_scope`), and it has no tool that marks an invoice paid.
 - **Delivery and inbound replies.** There is no delivery worker and no reply handling. A reply handler would extract promises to pay into the `promises` table.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
